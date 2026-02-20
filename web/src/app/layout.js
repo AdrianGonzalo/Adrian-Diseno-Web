@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Adrian Web Studio",
-  description: "Web propia donde ofrezco mis servicios",
+  title: "Adrian Diseño Web",
+  description: "Creo páginas web modernas y optimizadas para ayudar a negocios y emprendedores a destacar y atraer más clientes."
 };
 
 export default function RootLayout({ children }) {
