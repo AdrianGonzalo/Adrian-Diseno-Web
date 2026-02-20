@@ -8,7 +8,7 @@ export default function Hero() {
                     Desarrollo web profesional
                 </h2>
                 <div className="font-serif py-2
-                       text-[2.65rem]
+                       text-[2.50rem]
                        sm:text-5xl
                        md:text-6xl
                        lg:text-7xl
