@@ -1,11 +1,24 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
 import Image from "next/image"
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
+
+    const handleClick = (id) => {
+        setIsOpen(false)
+
+        if (id === "home") {
+            window.scrollTo({ top: 0, behavior: "smooth" })
+            return
+        }
+
+        const section = document.getElementById(id)
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" })
+        }
+    }
 
     return (
         <header className="fixed top-0 left-0 w-full z-50 bg-[var(--bg)] border-b border-white/15 backdrop-blur-md">
@@ -13,7 +26,10 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto px-6 py-4 md:py-6 flex items-center justify-between">
 
                 {/* Logo */}
-                <Link href="/" className="flex items-center cursor-pointer">
+                <button
+                    onClick={() => handleClick("home")}
+                    className="flex items-center cursor-pointer"
+                >
                     <Image
                         src="/logoBlanco.svg"
                         alt="Mi Logo"
@@ -22,22 +38,25 @@ export default function Navbar() {
                         priority
                         className="h-6 w-auto md:h-10 transition-all duration-300"
                     />
-                </Link>
+                </button>
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-10 text-sm text-gray-400 uppercase tracking-wider">
-                    <a href="#inicio" className="hover:text-white transition duration-300">
+                    <button onClick={() => handleClick("home")} className="hover:text-white transition">
                         Inicio
-                    </a>
-                    <a href="#sobre-mi" className="hover:text-white transition duration-300">
-                        Sobre mí
-                    </a>
-                    <a href="#trabajos" className="hover:text-white transition duration-300">
+                    </button>
+
+                    <button onClick={() => handleClick("works")} className="hover:text-white transition">
                         Trabajos
-                    </a>
-                    <a href="#contacto" className="hover:text-white transition duration-300">
+                    </button>
+
+                    <button onClick={() => handleClick("aboutme")} className="hover:text-white transition">
+                        Sobre mí
+                    </button>
+
+                    <button onClick={() => handleClick("contactme")} className="hover:text-white transition">
                         Contacto
-                    </a>
+                    </button>
                 </nav>
 
                 {/* Mobile Button */}
@@ -55,18 +74,23 @@ export default function Navbar() {
                     }`}
             >
                 <div className="space-y-6 text-gray-400 uppercase tracking-wider text-sm">
-                    <a href="#inicio" className="block hover:text-white transition">
+
+                    <button onClick={() => handleClick("home")} className="block hover:text-white transition">
                         Inicio
-                    </a>
-                    <a href="#sobre-mi" className="block hover:text-white transition">
-                        Sobre mí
-                    </a>
-                    <a href="#trabajos" className="block hover:text-white transition">
+                    </button>
+
+                    <button onClick={() => handleClick("works")} className="block hover:text-white transition">
                         Trabajos
-                    </a>
-                    <a href="#contacto" className="block hover:text-white transition">
+                    </button>
+
+                    <button onClick={() => handleClick("aboutme")} className="block hover:text-white transition">
+                        Sobre mí
+                    </button>
+
+                    <button onClick={() => handleClick("contactme")} className="block hover:text-white transition">
                         Contacto
-                    </a>
+                    </button>
+
                 </div>
             </div>
 

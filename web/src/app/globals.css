@@ -22,3 +22,7 @@ h1 {
     font-weight: 300;
     letter-spacing: -1px;
 }
+
+html {
+    scroll-behavior: smooth;
+}

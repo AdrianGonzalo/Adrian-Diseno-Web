@@ -24,7 +24,7 @@ export default function Works() {
     ];
 
     return (
-        <section className="py-14 px-6">
+        <section id="works" className="scroll-mt-12 py-14 px-6">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">

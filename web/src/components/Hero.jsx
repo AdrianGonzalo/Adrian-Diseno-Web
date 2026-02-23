@@ -1,14 +1,14 @@
 export default function Hero() {
     return (
-        <section className="relative min-h-svh flex items-center justify-center px-4">
+        <section className="relative min-h-svh flex items-center justify-center px-6">
 
             <div className="max-w-4xl text-center">
 
-                <h2 className="text-xs tracking-[0.3em] uppercase text-[var(--texttitlev2)] mb-4 sm:text-xl leading-[1.1]">
-                    Desarrollo web profesional
+                <h2 className="text-xs tracking-[0.3em] uppercase text-[var(--text)] mb-4 sm:text-xl leading-[1.1]">
+                    Presencia online profesional
                 </h2>
                 <div className="font-serif py-2
-                       text-[2.50rem]
+                       text-[3.3rem]
                        sm:text-5xl
                        md:text-6xl
                        lg:text-7xl
@@ -16,26 +16,26 @@ export default function Hero() {
                        leading-[1.1]
                        mb-8">
                     <h1>
-                        Creamos experiencias
+                        Diseño web para
                     </h1>
-                    <h1>digitales{" "}
-                        <span className="text-[var(--texttitlev1)]">excepcionales</span>
+                    <h1>
+                        <span className="text-[var(--texttitlev2)]">negocios locales</span>
                     </h1>
                 </div>
 
                 <p className="text-[var(--text)] max-w-2xl mx-auto mb-10 text-sm sm:text-lg leading-[1.1]">
-                    Transformo ideas en sitios web elegantes, funcionales y optimizados para convertir visitantes en clientes.
+                    Diseño páginas claras y profesionales para conseguir más clientes.
                 </p>
 
 
                 <div className="flex flex-col items-center gap-4">
-                    <button className="bg-[var(--texttitlev1)] hover:bg-blue-600 transition px-4 py-3 w-[160px] font-semibold">
+                    <a href="#contactme" className="bg-[var(--texttitlev1)]  transition px-4 py-3 w-[210px] font-semibold">
+                        Cuéntame tu idea
+                    </a>
+                    <a href="#works" className="border border-[var(--texttitlev2)] text-[var(--texttitlev2)] hover:bg-[var(--texttitlev1)] hover:text-black transition-all duration-300 px-4 py-3 w-[210px] ">
                         Ver proyectos
-                    </button>
+                    </a>
 
-                    <button className="border border-gray-700 hover:border-gray-500 transition px-4 py-3 w-[130px]">
-                        Contactar
-                    </button>
                 </div>
             </div>
 
