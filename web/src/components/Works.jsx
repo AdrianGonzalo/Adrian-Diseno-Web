@@ -5,7 +5,7 @@ export default function Works() {
             title: "Helí Suárez",
             description:
                 "Web estratégica para posicionar su marca como colorista a nivel internacional, con portfolio audiovisual, blog profesional y presencia sólida online.",
-            result: "Proyección internacional",
+            result: "Marca internacional",
             tags: ["Portfolio", "Video", "Blog", "Branding"],
             image: "/heli-suarez.png",
             url: "https://helisuarezcolor.com/",
@@ -15,7 +15,7 @@ export default function Works() {
             title: "Hecho a Mano",
             description:
                 "Galería dinámica desarrollada con sistema de filtrado por categorías y gestión de contenido, optimizada para mostrar trabajos visuales de forma organizada.",
-            result: "Gestión sencilla de contenido",
+            result: "Autonomía total de gestión",
             tags: ["Galería", "Filtros", "Panel admin", "Gestión dinámica"],
             image: "/hecho-a-mano.png",
             url: "https://tu-web-aqui.com",
@@ -24,7 +24,7 @@ export default function Works() {
     ];
 
     return (
-        <section id="works" className="scroll-mt-12 py-14 px-6">
+        <section id="works" className="scroll-mt-12 py-16 px-6">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -37,8 +37,7 @@ export default function Works() {
                     </h1>
 
                     <p className="text-[var(--text)] mt-4 max-w-2xl mx-auto text-sm md:text-base">
-                        No son solo webs bonitas. Son herramientas estratégicas diseñadas
-                        para posicionar marcas y generar oportunidades reales.
+                        No se trata solo de diseño. Cada web está pensada para posicionar tu negocio y generar oportunidades reales.
                     </p>
                 </div>
 
@@ -100,6 +99,23 @@ export default function Works() {
                             </div>
                         </div>
                     ))}
+                </div>
+            </div>
+            <div className="text-center mt-10 ">
+                <div className="animate-bounce">
+                    <p className="text-[var(--text)] mb-2">
+                        ¿Quieres que tu negocio sea el siguiente caso de éxito?
+                    </p>
+                    <a
+                        href="#contactme"
+                        className="text-[var(--texttitlev1)] font-semibold "
+                    >
+                        Hablemos de tu proyecto
+                    </a>
+                    <div className="absolute left-1/2 -translate-x-1/2 text-gray-300">
+                        ↓
+                    </div>
+
                 </div>
             </div>
         </section>

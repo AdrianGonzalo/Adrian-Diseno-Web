@@ -10,43 +10,45 @@ export default function Aboutme() {
                 <div className=" space-y-6 text-[var(--text)] text-sm sm:text-base leading-relaxed">
 
                     <p>
-                        Ayudo a negocios y marcas personales a tener una presencia digital
-                        que realmente marque la diferencia. Diseño y desarrollo sitios web
-                        rápidos, elegantes y pensados para convertir visitas en oportunidades
-                        reales.
+                        Trabajo con negocios que quieren una web clara, profesional y que les ayude a conseguir más clientes.
+                        Me encargo de todo el proceso para que tú no tengas que preocuparte por nada técnico.
                     </p>
 
                     <p>
-                        Me implico en cada proyecto como si fuera propio, cuidando tanto el
-                        diseño como el rendimiento y la experiencia de usuario. Mi objetivo
-                        no es solo que tu web se vea bien, sino que funcione, conecte y te
-                        ayude a crecer.
+                        Diseño y desarrollo cada proyecto pensando en lo más importante: que tu web sea fácil de usar,
+                        rápida y que transmita confianza desde el primer momento.
                     </p>
                 </div>
 
                 {/* Stats */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 mt-16 
-                divide-y sm:divide-y-0 sm:divide-x 
-                divide-[var(--texttitlev1)]">
+divide-y sm:divide-y-0 sm:divide-x 
+divide-[var(--texttitlev1)]">
 
-                    <div className="px-8 py-4">
-                        <h3 className="font-serif text-2xl sm:text-3xl">Clean Code</h3>
+                    <div className="px-8 py-6 text-center">
+                        <h3 className="font-serif text-2xl sm:text-3xl">
+                            Más clientes
+                        </h3>
                         <p className="text-[var(--text)] mt-3 text-sm sm:text-base">
-                            Desarrollo estructurado, mantenible y escalable.
+                            Web pensada para atraer visitas y convertirlas en oportunidades reales.
                         </p>
                     </div>
 
-                    <div className="px-8 py-4">
-                        <h3 className="font-serif text-2xl sm:text-3xl">Performance</h3>
+                    <div className="px-8 py-6 text-center">
+                        <h3 className="font-serif text-2xl sm:text-3xl">
+                            Rápida y optimizada
+                        </h3>
                         <p className="text-[var(--text)] mt-3 text-sm sm:text-base">
-                            Web rápida, optimizada y pensada para posicionar.
+                            Velocidad y rendimiento que transmiten profesionalidad y no hacen perder clientes.
                         </p>
                     </div>
 
-                    <div className="px-8 py-4">
-                        <h3 className="font-serif text-2xl sm:text-3xl">UX First</h3>
+                    <div className="px-8 py-6 text-center">
+                        <h3 className="font-serif text-2xl sm:text-3xl">
+                            Sin complicaciones
+                        </h3>
                         <p className="text-[var(--text)] mt-3 text-sm sm:text-base">
-                            Experiencia clara, intuitiva y enfocada en conversión.
+                            Me encargo de todo el proceso para que tú solo te centres en tu negocio.
                         </p>
                     </div>
 
