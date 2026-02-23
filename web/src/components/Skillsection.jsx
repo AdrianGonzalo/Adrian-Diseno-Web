@@ -21,7 +21,7 @@ export default function SkillSection() {
     ];
 
     return (
-        <section id="skill" className="px-6 py-10">
+        <section id="skill" className="px-6 py-12 bg-[var(--bg-soft2)]">
             <div className="max-w-6xl mx-auto text-center">
                 <p className="text-sm text-[var(--texttitlev2)] tracking-widest uppercase mb-4">
                     Así de fácil

@@ -61,7 +61,7 @@ export default function Contactme() {
     };
 
     return (
-        <section id="contactme" className="px-6 sm:px-10 lg:px-20 py-24">
+        <section id="contactme" className="px-6 py-28 bg-[var(--bg-soft)]">
             <motion.div
                 initial={{ opacity: 0, scale: 0.96 }}
                 whileInView={{ opacity: 1, scale: 1 }}

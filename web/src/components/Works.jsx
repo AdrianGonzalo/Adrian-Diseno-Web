@@ -24,7 +24,7 @@ export default function Works() {
     ];
 
     return (
-        <section id="works" className="scroll-mt-12 py-16 px-6">
+        <section id="works" className="scroll-mt-12 px-6 py-28 bg-[var(--bg-soft)]">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -101,7 +101,7 @@ export default function Works() {
                     ))}
                 </div>
             </div>
-            <div className="text-center mt-10 ">
+            <div className="text-center mt-16 ">
                 <div className="animate-bounce">
                     <p className="text-[var(--text)] mb-2">
                         ¿Quieres que tu negocio sea el siguiente caso de éxito?
@@ -118,6 +118,7 @@ export default function Works() {
 
                 </div>
             </div>
+
         </section>
     );
 }

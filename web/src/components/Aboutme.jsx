@@ -1,7 +1,10 @@
 export default function Aboutme() {
     return (
-        <section id="aboutme" className="px-6 py-6 text-center max-w-6xl mx-auto scroll-mt-16">
-            <div>
+        <section
+            id="aboutme"
+            className="px-6 py-28 scroll-mt-16 bg-[var(--bg-soft2)]"
+        >
+            <div className="max-w-6xl mx-auto text-center">
                 {/* Titulos */}
                 <h1 className="font-serif text-[2.65rem] sm:text-5xl lg:text-6xl mt-4 mb-10">
                     Detrás de cada{" "}

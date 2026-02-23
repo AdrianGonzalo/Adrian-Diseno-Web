@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <section className="relative min-h-svh flex items-center justify-center px-6">
+        <section className="relative min-h-svh flex items-center justify-center px-6 overflow-hidden">
 
             <div className="max-w-4xl text-center">
 
@@ -42,6 +42,7 @@ export default function Hero() {
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-300 animate-bounce text-xl">
                 ↓
             </div>
+
 
         </section >
     );
