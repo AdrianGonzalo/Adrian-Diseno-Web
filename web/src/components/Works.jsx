@@ -46,7 +46,7 @@ export default function Works() {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="bg-[var(--bgv2)] rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300"
+                            className="bg-[var(--bgv2)]  overflow-hidden border border-gray-800 transition-all duration-300"
                         >
                             {/* Imagen */}
                             <div className="relative">
@@ -80,7 +80,7 @@ export default function Works() {
                                     {project.tags.map((tag, i) => (
                                         <span
                                             key={i}
-                                            className="text-xs bg-gray-800 px-3 py-1 rounded-full text-gray-300"
+                                            className="text-xs bg-gray-800 px-3 py-1  text-gray-300"
                                         >
                                             {tag}
                                         </span>

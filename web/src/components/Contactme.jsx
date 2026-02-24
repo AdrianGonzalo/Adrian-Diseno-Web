@@ -67,7 +67,7 @@ export default function Contactme() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 viewport={{ once: true }}
-                className="max-w-6xl mx-auto bg-[var(--bgv2)] border border-white/5 rounded-2xl p-10 sm:p-14"
+                className="max-w-6xl mx-auto bg-[var(--bgv2)] border border-white/5 rounded-sm p-10 sm:p-14"
             >
                 <span className="text-xs tracking-[0.3em] uppercase text-[var(--texttitlev2)]">
           // Contacto

@@ -21,7 +21,7 @@ export default function SkillSection() {
     ];
 
     return (
-        <section id="skill" className="px-6 py-12 bg-[var(--bg-soft2)]">
+        <section id="skill" className="px-6 py-28 bg-[var(--bg-soft2)]">
             <div className="max-w-6xl mx-auto text-center">
                 <p className="text-sm text-[var(--texttitlev2)] tracking-widest uppercase mb-4">
                     Así de fácil
@@ -37,7 +37,7 @@ export default function SkillSection() {
                         <div key={step.number} className="relative">
                             {/* Número */}
                             <div className="flex items-center justify-center mb-6">
-                                <div className="w-12 h-12 flex items-center justify-center rounded-lg  border border-[var(--texttitlev2)] text-[var(--texttitlev2)] font-semibold">
+                                <div className="w-12 h-12 flex items-center justify-center rounded-sm  border border-[var(--texttitlev2)] text-[var(--texttitlev2)] font-semibold">
                                     {step.number}
                                 </div>
                             </div>

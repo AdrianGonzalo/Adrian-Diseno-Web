@@ -18,10 +18,10 @@ export default function Footer() {
 
                     {/* Navegación */}
                     <div className="flex flex-col sm:flex-row gap-6 text-sm text-[var(--text)]">
-                        <a href="#about" className="hover:text-[var(--texttitlev1)] transition">
+                        <a href="/privacidad" className="hover:text-[var(--texttitlev1)] transition">
                             Privacidad
                         </a>
-                        <a href="#works" className="hover:text-[var(--texttitlev1)] transition">
+                        <a href="/avisolegal" className="hover:text-[var(--texttitlev1)] transition">
                             Aviso legal
                         </a>
                     </div>
