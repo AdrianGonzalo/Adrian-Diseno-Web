@@ -145,7 +145,7 @@ export default function Contactme() {
                         disabled={loading}
                         className="w-full bg-[var(--texttitlev1)] text-black py-4 font-semibold hover:opacity-90 transition disabled:opacity-50"
                     >
-                        {loading ? "Enviando..." : "Solicitar presupuesto"}
+                        {loading ? "Enviando..." : "Quiero mi web"}
                     </button>
 
                     {success && (

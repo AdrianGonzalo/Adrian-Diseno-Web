@@ -3,29 +3,37 @@ export default function Works() {
         {
             category: "Industria audiovisual",
             title: "Helí Suárez",
-            description:
-                "Web estratégica para posicionar su marca como colorista a nivel internacional, con portfolio audiovisual, blog profesional y presencia sólida online.",
-            result: "Marca internacional",
-            tags: ["Portfolio", "Video", "Blog", "Branding"],
+            problem:
+                "Necesitaba posicionarse como colorista profesional a nivel internacional.",
+            solution:
+                "Diseñé una web estratégica con portfolio audiovisual y blog profesional.",
+            impact:
+                "Hoy cuenta con una presencia online alineada con su nivel profesional.",
+            result: "Posicionamiento internacional",
+            tags: ["Portfolio", "Videos", "Blog", "Branding"],
             image: "/heli-suarez.png",
             url: "https://helisuarezcolor.com/",
         },
         {
             category: "Galería digital",
             title: "Hecho a Mano",
-            description:
-                "Galería dinámica desarrollada con sistema de filtrado por categorías y gestión de contenido, optimizada para mostrar trabajos visuales de forma organizada.",
-            result: "Autonomía total de gestión",
-            tags: ["Galería", "Filtros", "Panel admin", "Gestión dinámica"],
+            problem:
+                "Necesitaba mostrar sus trabajos de forma profesional sin depender de terceros.",
+            solution:
+                "Diseñé una galería clara con gestión sencilla y autónoma.",
+            impact:
+                "Ahora actualiza su contenido cuando quiere, manteniendo una imagen sólida.",
+            result: "Gestión 100% autónoma",
+            tags: ["Galería", "Panel admin", "Gestión dinámica"],
             image: "/hecho-a-mano.png",
-            url: "https://tu-web-aqui.com",
+            url: "https://www.artesaniadecorazon.com/",
         }
-
     ];
 
     return (
         <section id="works" className="scroll-mt-12 px-6 py-28 bg-[var(--bg-soft)]">
             <div className="max-w-6xl mx-auto">
+
                 {/* Header */}
                 <div className="text-center mb-16">
                     <p className="text-sm text-[var(--texttitlev2)] uppercase tracking-widest mb-4">
@@ -42,45 +50,53 @@ export default function Works() {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="bg-[var(--bgv2)]  overflow-hidden border border-gray-800 transition-all duration-300"
+                            className="bg-[var(--bgv2)] border border-gray-800 hover:border-[var(--texttitlev1)] transition-all duration-300 hover:-translate-y-1"
                         >
                             {/* Imagen */}
-                            <div className="relative">
+                            <div className="relative overflow-hidden">
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-64 object-cover"
+                                    className="w-full h-70 object-cover"
                                 />
 
-                                <span className="absolute top-3 right-3 bg-[var(--texttitlev1)] text-sm px-4 py-1 rounded-full font-medium">
+                                <span className="absolute top-4 right-4 bg-black/60 text-gray-200 text-xs px-3 py-1 rounded backdrop-blur-sm">
                                     {project.result}
                                 </span>
                             </div>
 
                             {/* Contenido */}
-                            <div className="p-6">
-                                <p className="text-[var(--texttitlev2)] text-xs uppercase mb-2 tracking-wide">
+                            <div className="p-10">
+                                <p className="text-[var(--texttitlev2)] text-xs uppercase mb-4 tracking-wide">
                                     {project.category}
                                 </p>
 
-                                <h3 className="text-xl font-semibold mb-3">
+                                <h3 className="text-2xl font-semibold mb-6">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-[var(--text)] text-sm mb-4 leading-relaxed">
-                                    {project.description}
+                                <p className="text-sm text-gray-400 mb-4 leading-relaxed">
+                                    {project.problem}
+                                </p>
+
+                                <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+                                    {project.solution}
+                                </p>
+
+                                <p className="text-sm italic text-gray-500 mb-8 leading-relaxed">
+                                    {project.impact}
                                 </p>
 
                                 {/* Tags */}
-                                <div className="flex flex-wrap gap-2 mb-6">
+                                <div className="flex flex-wrap gap-2 mb-8">
                                     {project.tags.map((tag, i) => (
                                         <span
                                             key={i}
-                                            className="text-xs bg-gray-800 px-3 py-1  text-gray-300"
+                                            className="text-xs bg-gray-800 px-3 py-1 text-gray-300"
                                         >
                                             {tag}
                                         </span>
@@ -92,7 +108,7 @@ export default function Works() {
                                     href={project.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-[var(--texttitlev2)] text-sm font-medium transition"
+                                    className="inline-flex items-center gap-2 text-[var(--texttitlev2)] text-sm font-medium hover:text-white transition"
                                 >
                                     Ver proyecto →
                                 </a>
@@ -100,25 +116,22 @@ export default function Works() {
                         </div>
                     ))}
                 </div>
-            </div>
-            <div className="text-center mt-16 ">
-                <div className="animate-bounce">
-                    <p className="text-[var(--text)] mb-2">
-                        ¿Quieres que tu negocio sea el siguiente caso de éxito?
+
+                {/* CTA Final */}
+                <div className="text-center mt-24">
+                    <p className="text-[var(--text)] mb-6 text-lg">
+                        ¿Tu web está generando clientes o solo existe?
                     </p>
+
                     <a
                         href="#contactme"
-                        className="text-[var(--texttitlev1)] font-semibold "
+                        className="inline-block bg-[var(--texttitlev1)] text-black px-8 py-3 font-semibold hover:opacity-90 transition"
                     >
-                        Hablemos de tu proyecto
+                        Quiero una web que venda
                     </a>
-                    <div className="absolute left-1/2 -translate-x-1/2 text-gray-300">
-                        ↓
-                    </div>
-
                 </div>
-            </div>
 
+            </div>
         </section>
     );
 }
