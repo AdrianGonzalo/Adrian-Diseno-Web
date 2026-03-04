@@ -22,7 +22,7 @@ export default function Works() {
             solution:
                 "Diseñé una galería clara con gestión sencilla y autónoma.",
             impact:
-                "Ahora actualiza su contenido cuando quiere, manteniendo una imagen sólida.",
+                "Ahora actualiza su contenido cuando quiere sin depender de terceros.",
             result: "Gestión 100% autónoma",
             tags: ["Galería", "Panel admin", "Gestión dinámica"],
             image: "/hecho-a-mano.png",
